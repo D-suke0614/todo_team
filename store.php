@@ -6,7 +6,9 @@ require_once('Models/Task.php');
 // データの受け取り
 $title = $_POST['title'];
 $contents = $_POST['contents'];
+date_default_timezone_set('Asia/Tokyo');
 $currentTime = date("Y/m/d H:i:s");
+
 
 // DBへのデータ保存
 $task = new Task();
